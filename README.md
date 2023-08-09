@@ -2,7 +2,7 @@
 
 [Github repo](https://github.com/Welshy92/heritage-housing-analysis)
 
-[Live deployed project]()
+[Live deployed project](https://heritagehousing-a55973708c5f.herokuapp.com/)
 
 ## Dataset Content
 
@@ -47,7 +47,11 @@ Although your friend has an excellent understanding of property prices in her ow
 
 ## Hypothesis and how to validate?
 
-- List here your project hypothesis(es) and how you envision validating it (them).
+we will conduct a correlation study for the following hypothesis:
+
+- 1 - We suspect that larger houses will be more expensive.
+- 2 - We expect newer houses to be more expensive.
+- 3 - We expect thet a house in good condition will increase the price.
 
 ## The rationale to map the business requirements to the Data Visualisations and ML tasks
 
@@ -66,6 +70,12 @@ Although your friend has an excellent understanding of property prices in her ow
   - Describe Project Dataset
   - State Business Requirements
 
+- Page 2:
+
+  - Project Hypothesis
+  - How I inended to solve them
+  - Success or failure? 
+
 - List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other items that your dashboard library supports.
 - Eventually, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project you were confident you would use a given plot to display an insight but eventually you needed to use another plot type)
 
@@ -77,37 +87,45 @@ Although your friend has an excellent understanding of property prices in her ow
 
 ### Heroku
 
-- The App live link is: https://YOUR_APP_NAME.herokuapp.com/
-- Set the runtime.txt Python version to a [Heroku-20](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
-- The project was deployed to Heroku using the following steps.
+- The App live link is: [LIVE HERE!](<https://heritagehousing-a55973708c5f.herokuapp.com/>)
+- I have Set the runtime.txt Python version to a [Heroku-20](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
+- The project was deployed to Heroku using the following steps:
 
 1. Log in to Heroku and create an App
 2. At the Deploy tab, select GitHub as the deployment method.
-3. Select your repository name and click Search. Once it is found, click Connect.
+3. Typed in my heritage "heritage-housing-analysis" repository name and click Search. Once it is found, click Connect.
 4. Select the branch you want to deploy, then click Deploy Branch.
-5. The deployment process should happen smoothly if all deployment files are fully functional. Click the button Open App on the top of the page to access your App.
-6. If the slug size is too large then add large files not required for the app to the .slugignore file.
+5. Once the deployment has succeeded, click the button "Open App" on the top of the page to see the live deployment.
 
 ## Main Data Analysis and Machine Learning Libraries
 
-- Here you should list the libraries you used in the project and provide example(s) of how you used these libraries.
+- numPy
+- Pandas
+- Plotly
+- SciKit Learn
+- Seaborn - Used in my data analysis correlation studies.
+
+## Other Technologies Used
+
+- Streamlit - Used to quickly create a webpage to display all of my results of my data analysis and machine learning.
+- CodeAnywhere - Cloud based IDE used to code the project.
+- Jupyter - Notebooks used in my data analysis and machine learning coding.
+- Git - Source control
+- Heroku - Used to host my streamlit app.
 
 ## Credits
 
-- In this section, you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism.
-- You can break the credits section up into Content and Media, depending on what you have included in your project.
+- Code Institute -
 
 ### Content
 
 - The text for the Home page was taken from Wikipedia Article A
-- Instructions on how to implement form validation on the Sign-Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
 
 ### Media
 
 - The photos used on the home and sign-up page are from This Open Source site
-- The images used for the gallery page were taken from this other open-source site
 
 ## Acknowledgements (optional)
 
-- In case you would like to thank the people that provided support through this project.
+- Nicola Hodby - My rock that has kept me motivated through the highs and lows.
+- Travis Perkins - My employers who were very supportive in making sure I had the time to do the project.
