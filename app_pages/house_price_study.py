@@ -44,6 +44,9 @@ def house_price_study_body():
     st.info(
         f"The correlation indications and plots below interpretation converge. "
         f"It is indicated that: \n"
+        f"*1stFlrSF, GarageArea, GrLivArea, OverallQual, TotalBsmtSF and "
+        f"YearBuilt are the variables with the strongest correlation "
+        f"to the SalePrice."
         f"* All of the 6 chosen variables have a positive effect on the SalePrice \n"
         f"* YearBuilt was the least important of the 6. \n"
         f"* TotalBsmtSF was just about the most important of the 6. \n"

@@ -7,6 +7,16 @@ def page_summary_body():
 
     # Some basic inormation on the dataset used
     st.info(
+        f"#### Jargon & Project Terms \n \n"
+        f"* SalePrice - The Price that the property sold for. \n"
+        f"* 1stFlrSF - First floor in square feet. \n"
+        f"* GarageArea - Size of garage in square feet. \n"
+        f"* GrLivArea - Above grade (ground) living area in square feet \n"
+        f"* OverallQual - Rates the overall material and finish of the house"
+        f" out of 10. 1 being very poor and 10 being very good. \n"
+        f"* TotalBsmtSF - Basement area in square feet. \n"
+        f"* YearBuilt - Original contruction date. \n \n"
+        f"#### Project Dataset \n \n"
         f"The dataset is sourced from [Kaggle]"
         f"(https://www.kaggle.com/codeinstitute/housing-prices-data).\n"
         f"The dataset has almost 1.5 thousand rows and represents housing "
