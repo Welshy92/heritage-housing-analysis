@@ -26,7 +26,7 @@ def page_summary_body():
         f" sale price for houses built between 1872 and 2010.")
 
     # Link to README file for users to view the full documentation.
-    st.write(
+    st.warning(
         f"* For additional information, please read the [Project README file]"
         f"(https://github.com/Welshy92/heritage-housing-analysis/blob/main/README.md).")
 
