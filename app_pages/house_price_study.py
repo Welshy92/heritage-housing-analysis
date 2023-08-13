@@ -55,17 +55,19 @@ def house_price_study_body():
     )
 
     # Code copied from "HousePriceStudy" notebook - "EDA on selected variables" section
-    df_eda = df.filter(vars_to_study + ['SalePrice'])
+    if st.checkbox("Inspect Correlation Study"):
 
-    target_var = 'SalePrice'
+        df_eda = df.filter(vars_to_study + ['SalePrice'])
 
-    # Plots to show the effect on Sale Price each variable has.S
-    def plot_regress(df, col, target_var):
-        fig, axes = plt.subplots(figsize=(12, 5))
-        sns.regplot(data=df, x=col, y=target_var,
-                    line_kws={"color": "red"})
-        plt.title(f"{col}", fontsize=20, y=1.05)
-        st.pyplot(fig)
+        target_var = 'SalePrice'
 
-    for col in df_eda.drop([target_var], axis=1).columns.to_list():
-        plot_regress(df_eda, col, target_var)
+        # Plots to show the effect on Sale Price each variable has.S
+        def plot_regress(df, col, target_var):
+            fig, axes = plt.subplots(figsize=(12, 5))
+            sns.regplot(data=df, x=col, y=target_var,
+                        line_kws={"color": "red"})
+            plt.title(f"{col}", fontsize=20, y=1.05)
+            st.pyplot(fig)
+
+        for col in df_eda.drop([target_var], axis=1).columns.to_list():
+            plot_regress(df_eda, col, target_var)
