@@ -13,5 +13,7 @@ def project_hypothesis_body():
         f"* We suspect that a higher quality house will increase the price."
         f" - Correct. \n \n"
 
-        f"The correlation study at House Price Study supports this."
+        f"The correlation study at House Price Study supports all "
+        f"of this. This insight can be used by the client to make "
+        f"a few actionable changes that will maximise the sale price."
     )
