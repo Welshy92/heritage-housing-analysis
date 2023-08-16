@@ -72,9 +72,21 @@ we will conduct a correlation study for the following hypothesis:
 
 - Page 2:
 
-  - Project Hypothesis
+  - Project Hypothesis & Validation
   - How I inended to solve them
   - Success or failure?
+
+- Page 3:
+  
+  - Sale Price Study
+  - Show 1st business requirement
+  - Tickbox to showa preview of dataset.
+  - Explain correlation study and it's conclusions
+  - Tickbox to show study graphs
+
+- Page 4:
+
+  - House Price Predictor
 
 - List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other items that your dashboard library supports.
 - Eventually, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project you were confident you would use a given plot to display an insight but eventually you needed to use another plot type)
