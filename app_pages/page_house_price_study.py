@@ -18,7 +18,7 @@ def house_price_study_body():
     vars_to_study = ['1stFlrSF', 'GarageArea', 'GrLivArea',
                      'OverallQual', 'TotalBsmtSF', 'YearBuilt']
 
-    st.write("### Sale Price Study")
+    st.write("## Sale Price Study")
     st.info(
         f"* The client is interested in understanding the patterns"
         f" between a houses attributes and it's sale price ")

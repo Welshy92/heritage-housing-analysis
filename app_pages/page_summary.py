@@ -3,11 +3,11 @@ import streamlit as st
 
 def page_summary_body():
 
-    st.write("### Quick Project Summary")
+    st.write("## Quick Project Summary")
 
     # Some basic inormation on the dataset used
     st.info(
-        f"#### Jargon & Project Terms \n \n"
+        f"### Jargon & Project Terms \n \n"
         f"* SalePrice - The Price that the property sold for. \n"
         f"* 1stFlrSF - First floor in square feet. \n"
         f"* GarageArea - Size of garage in square feet. \n"

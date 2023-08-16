@@ -3,7 +3,7 @@ import streamlit as st
 
 def project_hypothesis_body():
 
-    st.write("### Project Hypothesis & Validation")
+    st.write("## Project Hypothesis & Validation")
 
     # Some basic inormation on the dataset used
     st.success(
