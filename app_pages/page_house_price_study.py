@@ -40,21 +40,22 @@ def house_price_study_body():
         f"The most correlated variable are: **{vars_to_study}**"
     )
 
-    # Text based on "HousePriceStudy" notebook - "Conclusions and Next steps" section
+    # Text based on "HousePriceStudy" notebook - "Conclusions and Next steps"
     st.info(
-        f"The correlation indications and plots below interpretation converge. "
-        f"It is indicated that: \n"
+        f"The correlation indications and plots below interpretation "
+        f"converge. It is indicated that: \n"
         f"*1stFlrSF, GarageArea, GrLivArea, OverallQual, TotalBsmtSF and "
         f"YearBuilt are the variables with the strongest correlation "
         f"to the SalePrice."
-        f"* All of the 6 chosen variables have a positive effect on the SalePrice \n"
+        f"* All of the 6 chosen variables have a positive effect "
+        f"on the SalePrice \n"
         f"* YearBuilt was the least important of the 6. \n"
         f"* TotalBsmtSF was just about the most important of the 6. \n"
-        f"* Other than year built, the other factors are all pretty important to "
-        f"increasing the SalePrice. \n"
+        f"* Other than year built, the other factors are all pretty"
+        f" important to increasing the SalePrice. \n"
     )
 
-    # Code copied from "HousePriceStudy" notebook - "EDA on selected variables" section
+    # Code copied from "HousePriceStudy" notebook - "EDA on selected variables"
     if st.checkbox("Inspect Correlation Study"):
 
         df_eda = df.filter(vars_to_study + ['SalePrice'])
