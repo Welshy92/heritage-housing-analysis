@@ -82,7 +82,7 @@ we will conduct a correlation study for the following hypothesis:
   - Show 1st business requirement.
   - Tickbox to showa preview of dataset.
   - Explain correlation study and it's conclusions.
-  - Tickbox to show study graphs.
+  - Tickbox to show regression plots.
 
 - Page 4:
 
@@ -95,9 +95,6 @@ we will conduct a correlation study for the following hypothesis:
   - ML: Predict House Prices.
   - Features that the model trained and importance.
   - Pipeline performance.displaying confusion matrix and classification report.
-
-- List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other items that your dashboard library supports.
-- Eventually, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project you were confident you would use a given plot to display an insight but eventually you needed to use another plot type)
 
 ## Unfixed Bugs
 
@@ -133,19 +130,15 @@ we will conduct a correlation study for the following hypothesis:
 - Git - Source control
 - Heroku - Used to host my streamlit app.
 
-## Credits
+### Credits
 
-- Code Institute -
+- Code Institute - Provided learning content and used some custom functions from the walkthrough projects.
 
-### Content
+### External Code
 
-- The text for the Home page was taken from Wikipedia Article A
+- Custom functions used for data cleaning and correlation + PPS analysis from Churnometer walkthrough project by Code Institute.
 
-### Media
-
-- The photos used on the home and sign-up page are from This Open Source site
-
-## Acknowledgements (optional)
+## Acknowledgements
 
 - Nicola Hodby - My rock that has kept me motivated through the highs and lows.
-- Travis Perkins - My employers who were very supportive in making sure I had the time to do the project.
+- Travis Perkins - My employers who were very supportive in making sure I had the time to do this project.
