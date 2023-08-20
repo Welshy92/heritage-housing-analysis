@@ -135,6 +135,7 @@ we will conduct a correlation study for the following hypothesis:
 ### Credits
 
 - Code Institute - Provided learning content and used some custom functions from the walkthrough projects.
+- All library providers for their very detailed and easy to understand documentations.
 
 ### External Code
 
