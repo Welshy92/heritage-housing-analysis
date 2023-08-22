@@ -85,6 +85,7 @@ we will conduct a correlation study for the following hypothesis:
   - Tickbox to showa preview of dataset.
   - Explain correlation study and it's conclusions.
   - Tickbox to show regression plots.
+  - Tickbox to show correlation matrix.
 
 - Page 4:
 
@@ -122,14 +123,14 @@ we will conduct a correlation study for the following hypothesis:
 - Pandas
 - Plotly
 - SciKit Learn
-- Seaborn - Used in my data analysis correlation studies.
+- Seaborn - Used in my data analysis correlation studies
 
 ## Other Technologies Used
 
 - Streamlit - Used to quickly create a webpage to display all of my results of my data analysis and machine learning.
 - CodeAnywhere - Cloud based IDE used to code the project.
 - Jupyter - Notebooks used in my data analysis and machine learning coding.
-- Git - Source control
+- Git - Source control.
 - Heroku - Used to host my streamlit app.
 
 ### Credits
@@ -139,7 +140,7 @@ we will conduct a correlation study for the following hypothesis:
 
 ### External Code
 
-- Custom functions used for data cleaning and correlation + PPS analysis from Churnometer walkthrough project by Code Institute.
+- Custom functions used for data cleaning, feature engineering and correlation + PPS analysis from Churnometer walkthrough project by Code Institute.
 
 ## Acknowledgements
 
