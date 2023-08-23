@@ -21,7 +21,7 @@ Although my friend has an excellent understanding of property prices in her own 
 | 2ndFlrSF      | Second-floor square feet                                                 | 0 - 2065                                                                                                                                                                |
 | BedroomAbvGr  | Bedrooms above grade (does NOT include basement bedrooms)               | 0 - 8                                                                                                                                                                   |
 | BsmtExposure  | Refers to walkout or garden level walls                                 | Gd: Good Exposure; Av: Average Exposure; Mn: Minimum Exposure; No: No Exposure; None: No Basement                                                                       |
-| BsmtFinType1  | Rating of basement finished area                                        | GLQ: Good Living Quarters; ALQ: Average Living Quarters; BLQ: Below Average Living Quarters; Rec: Average Rec Room; LwQ: Low Quality; Unf: Unfinshed; None: No Basement |
+| BsmtFinType1  | Rating of basement finished area                                        | GLQ: Good Living Quarters; ALQ: Average Living Quarters; BLQ: Below Average Living Quarters; Rec: Average Rec Room; LwQ: Low Quality; Unf: Unfinished; None: No Basement |
 | BsmtFinSF1    | Type 1 finished square feet                                             | 0 - 5644                                                                                                                                                                |
 | BsmtUnfSF     | Unfinished square feet of basement area                                 | 0 - 2336                                                                                                                                                                |
 | TotalBsmtSF   | Total square feet of basement area                                      | 0 - 6110                                                                                                                                                                |
@@ -53,7 +53,7 @@ we will conduct a correlation study for the following hypothesis:
 
 - 1 - We suspect that larger houses will be more expensive.
 - 2 - We expect newer houses to be more expensive.
-- 3 - We expect thet a house in good condition will increase the price.
+- 3 - We expect that a house in good condition will increase in price.
 
 ## The rationale to map the business requirements to the Data Visualisations and ML tasks
 
@@ -75,15 +75,15 @@ we will conduct a correlation study for the following hypothesis:
 - Page 2:
 
   - Project Hypothesis & Validation.
-  - How I inended to solve them.
+  - How I intended to solve them.
   - Success or failure?
 
 - Page 3:
-  
+
   - Sale Price Study.
   - Show 1st business requirement.
-  - Tickbox to showa preview of dataset.
-  - Explain correlation study and it's conclusions.
+  - Tickbox to show a preview of dataset.
+  - Explain correlation study and its conclusions.
   - Tickbox to show regression plots.
   - Tickbox to show correlation matrix.
 
@@ -101,7 +101,7 @@ we will conduct a correlation study for the following hypothesis:
 
 ## Unfixed Bugs
 
-- You will need to mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a big variable to consider, paucity of time and difficulty understanding implementation is not valid reason to leave bugs unfixed.
+- You will need to mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a big variable to consider, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed.
 
 ## Deployment
 
@@ -111,9 +111,9 @@ we will conduct a correlation study for the following hypothesis:
 - I have Set the runtime.txt Python version to a [Heroku-20](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
 - The project was deployed to Heroku using the following steps:
 
-1. Log in to Heroku and create an App
+1. Login to Heroku and create an App
 2. At the Deploy tab, select GitHub as the deployment method.
-3. Typed in my heritage "heritage-housing-analysis" repository name and click Search. Once it is found, click Connect.
+3. Typed in my heritage "heritage-housing-analysis" repository name and clicked Search. Once it is found, click Connect.
 4. Select the branch you want to deploy, then click Deploy Branch.
 5. Once the deployment has succeeded, click the button "Open App" on the top of the page to see the live deployment.
 
