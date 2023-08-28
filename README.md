@@ -56,6 +56,124 @@ We know that we can use conventional data analysis to answer business requiremen
 - 2 - We expect newer houses to be more expensive.
 - 3 - We expect that a house in good condition will increase in price.
 
+We found all of these to be correct after completing a correlation study. More details can be found within the live app.
+
+## User Stories
+
+Information Gathering and Data Collection:
+
+- As a Data Practitioner, I want to download the public dataset on house prices in Ames, Iowa, so that I can gather the necessary data for analysis.
+
+        How? This will be done by obtaining the data from Kaggle using an API key.
+
+- As a Data Practitioner, I want to gather information on the client's four inherited houses, so that I can analyse it.
+
+        How? Collect relevant details and attributes of the client's four inherited houses, including features.
+
+Data Visualization, Cleaning, and Preparation:
+
+- As a Data Practitioner, I want to visualize the correlated variables against the sale price to identify relationships and gain some potential insight.
+
+        How? Create things scatter plots or heatmaps, to visualise the correlation between each variable and the sale price.
+
+- As a Data Practitioner, I want to clean and preprocess the data to ensure its quality and suitability for analysis.
+
+        How? Apply data cleaning techniques to handle missing values, outliers or other inconsistant things in the dataset, ensuring the data is accurate and ready for analysis.
+
+- As a Data Practitioner, I want to identify the most correlated variables with the sale price so that I can focus my predictions on the most important variables.
+
+        How? Calculate and analyze the correlation coefficients between each variable and the sale price, identifying the variables with the highest correlation values.
+
+Model Training, Optimization, and Validation:
+
+- As a Data Practitioner, I want to train, optimize, and validate a regression model using the collected data to predict house sale prices accurately.
+
+        How? Use the cleaned and preprocessed data to train a regression model, optimize its hyperparameters, and evaluate its performance using appropriate metrics.
+
+Dashboard Planning, Designing, and Development:
+
+- As a user, I want to have access to an intuitive and user-friendly dashboard, so that I can easily explore the data, visualize predictions, and gain insights.
+
+        How? The dashboard will be designed using Streamlit to ensure a clean and organized layout, intuitive navigation, and user-friendly interactions.
+
+- As a user, I want the dashboard to incorporate interactive visualizations and predictive capabilities, allowing me to interact with the data and receive accurate predictions.
+
+        How? A Streamlit dashboard will be used, allowing for interactive visualizations and seamless interaction with the data.
+
+Dashboard Deployment and Release:
+
+- As a user, I expect the dashboard to be deployed to a production environment, making it easily accessible for me and other users.
+
+        How: The dashboard will be deployed to the hosting platform Heroku for convenient access through a web browser.
+
+- As a user, I want the dashboard to undergo thorough testing and quality assurance to ensure its functionality and performance.
+
+        How: The dashboard will be rigorously tested for functionality, responsiveness, and compatibility across different devices and browsers.
+
+- As a Data Practitioner, I want to release the dashboard to the client and provide necessary documentation for its usage and maintenance.
+
+        How: Provide the client with the deployed dashboard, along with clear documentation outlining its usage instructions, features, and any necessary maintenance tasks.
+
+## Rationale to map the business requirements to the Data Visualizations and ML tasks
+
+- ### Business Requirement 1: Correlation Study and Data Visualization
+
+  The client's objective is to gain insights into the biggest factors of a sale price.
+
+  - Review and Inspect Dataset: In order to gain an understanding of the dataset related to the houses, a thorough inspection and review of the collection data will occur.
+  - Correlation Study: To understand how different variables relate to the "SalePrice" of houses, both Pearson and Spearman correlation coefficients will be calculated.
+  - Select Most Correlated Variables: Based on the correlation study results, the highest correlated variables with the "SalePrice" will be identified. These variables will be the priority for further analysis.
+  - Data Visualization: various visualization methods such as scatter plots, heatmaps, and regression plots will be used to to represent the correlations between each variable and the "SalePrice."
+  - Hypothesis Validation: Findings from the correlation study and data visualizations will be used to validate hypothesis about how strong of an effect some factors can have on the sale price of houses.
+
+- ### Business Requirement 2: Predict House Prices
+
+  The client's objective is to accurately predict house prices in Ames, Iowa.
+
+  - Data Cleaning and Feature Engineering: To prepare the data for the machine learning model, the data will be cleaned and feature engineering will be used.
+  - Regression Model Development: A regression model will be constructed using best algorithm (ExtraTreesRegression) to predict the sale price of houses.
+  - Hyperparameter Tuning: To optimize the performance of the regression model, hyperparameters will be adjusted.
+  - Regression Evaluation: The trained model will be evaluated using appropriate evaluation metrics such as R2 score and Mean Absolute Error.
+  - Predict house prices: Once the model is trained and evaluated, it will then be utilized to predict the prices of four inherited houses, as well as other house in Ames, Iowa.
+
+## ML Business Case
+
+- Business Requirements:
+
+  - Visualizations: Provide data visualizations showing the correlation between house attributes and sale prices.
+  - Sale Price Prediction: Aloow the prediction of sale prices for the client's inherited houses and any other houses in Ames, Iowa.
+
+- Conventional Data Analysis:
+
+  - Conventional data analysis will be used to study the correlation between house attributes and sale prices.
+
+- Dashboard Requirement:
+
+  - The client requires a dashboard to present the project outcomes. Streamlit will be used.
+
+- Project Outcome:
+
+  - The client considers the project successful if it achieves the following:
+
+    - Relevant Variables: Identify and present the most relevant variables correlated with the sale price.
+    - Sale Price Prediction: Develop a model capable of predicting the sale price for the client's four inherited houses and any other houses in Ames, Iowa.
+
+- Ethical or Privacy Concerns:
+
+  - No ethical or privacy concerns have been identified since the client has obtained the dataset from a public source.
+
+- Model Selection:
+
+  - Based on the available data, a regressor model will be used to predict the sale price. The regressor will take some of the house attributes information as inputs and generate the predicted sale price as the output.
+
+- Performance Goal:
+
+  - To hit the client's expectations, a target R2 score of at least 0.75 on both train and test sets must be met.
+
+- Client Benefits:
+
+  - By understanding the most relevant variables correlated with sale price, the client can make informed decisions to maximize the sale prices of the inherited properties.
+
 ## Dashboard Design (Streamlit Dashboard)
 
 - Page 1:
@@ -92,11 +210,6 @@ We know that we can use conventional data analysis to answer business requiremen
   - Features that the model trained and importance.
   - Pipeline performance.
 
-## Potential future improvements/ lessons learned
-
-* Perhaps don't drop features at a stage as early as the first notebook like I did for 
-* Maybe test an alterative method to fill in the missing data points and see if that improves ML pipeline performances.
-
 ## Deployment
 
 ### Heroku
@@ -113,11 +226,12 @@ We know that we can use conventional data analysis to answer business requiremen
 
 ## Main Data Analysis and Machine Learning Libraries
 
-- numPy
-- Pandas
-- Plotly
-- SciKit Learn
-- Seaborn - Used in my data analysis correlation studies
+- numPy - Used for my correlation studies to help produce things such as heatmaps.
+- Pandas - Used to convert the raw data in dataframes, as well as performing many operations on it.
+- Plotly & matplotlib - Used to help visualse my studies into various plots for easier reading and analysis.
+- SciKit Learn - Used for creating pipelines and feature selection.
+- Seaborn - Used in my data analysis correlation studies.
+- Feature-engine - Used to perform data engineering tasks
 
 ## Other Technologies Used
 
@@ -135,6 +249,11 @@ We know that we can use conventional data analysis to answer business requiremen
 ### External Code
 
 - Custom functions used for data cleaning, feature engineering and correlation + PPS analysis from Churnometer walkthrough project by Code Institute, as well as adapting some of the code they used to make my predictive_analysis_ui.py file.
+
+## Potential future improvements/ lessons learned
+
+- Perhaps don't drop features at a stage as early as the first notebook.
+- Maybe test an alterative method to fill in the missing data points and see if that improves ML pipeline performances. However my pipeline was within acceptable parameters.
 
 ## Acknowledgements
 
