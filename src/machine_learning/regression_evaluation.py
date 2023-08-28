@@ -33,7 +33,7 @@ def regression_evaluation(X, y, pipeline):
 
 
 # Plot evaluation of regression model
-def regression_evaluation_plots(X_train, y_train, X_test, y_test, pipeline,
+def regression_plots(X_train, y_train, X_test, y_test, pipeline,
                                 alpha_scatter=0.5):
 
     pred_train = pipeline.predict(X_train)

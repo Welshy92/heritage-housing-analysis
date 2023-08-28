@@ -55,10 +55,10 @@ def house_price_study_body():
         f" important to increasing the SalePrice. \n"
     )
 
+    df_eda = df.filter(vars_to_study + ['SalePrice'])
+
     # Code copied from "HousePriceStudy" notebook - "EDA on selected variables"
     if st.checkbox("Inspect Correlation Study"):
-
-        df_eda = df.filter(vars_to_study + ['SalePrice'])
 
         target_var = 'SalePrice'
 
@@ -72,3 +72,40 @@ def house_price_study_body():
 
         for col in df_eda.drop([target_var], axis=1).columns.to_list():
             plot_regress(df_eda, col, target_var)
+
+    # Plotting Heatmap
+    if st.checkbox("Show Correlation Heatmap"):
+        plot_heatmap(df_eda, vars_to_study)
+
+    st.success(
+        f"**Finding:**\n\n"
+        f"Based on correlation and plot analysis, the following observations"
+        f" have been made. They address the first business question about the"
+        f"  correlation between house features and Sale Price:\n"
+        f"* The *Sale Price* of a house tends to be higher for properties"
+        f" with certain features. \n"
+        f"* *Overall Quality* of the house has the strongest "
+        f"correlation with Sale Price, showing us that houses with higher "
+        f"quality usually sell for a higher price. \n"
+        f"* Variables such as *Above Ground Living Area*, *Garage Area*, "
+        f"*Total Basement Square Footage*, and *First Floor Square "
+        f"Footage* also show strong positive correlations with"
+        f" *Sale Price.* \n"
+        f"* Other variables, such as *Year Built*, exhibit moderate "
+        f"positive correlations with *Sale Price*."
+    )
+
+
+def plot_heatmap(df_eda, relevant_variables):
+
+    # Create a new DataFrame with the selected variables
+    heatmap_vars = df_eda.copy()
+
+    # Calculate the correlation matrix
+    correlation_matrix = heatmap_vars.corr()
+
+    # Plot the heat map
+    fig = plt.figure(figsize=(10, 8))
+    sns.heatmap(correlation_matrix, annot=True, cmap='coolwarm', square=True)
+    plt.title("Correlation Matrix", fontsize=20)
+    st.pyplot(fig)
