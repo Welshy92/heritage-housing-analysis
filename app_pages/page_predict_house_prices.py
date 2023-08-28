@@ -51,7 +51,7 @@ def predict_house_price_body():
     st.write("---")
 
     # Show best features.
-    st.write("* **The features that the model was trained and their importance:**")
+    st.write("* **The features that the model was trained on and their importance:**")
     st.write(X_train.columns.to_list())
     st.image(sale_price_importance)
     st.write("---")
@@ -80,7 +80,7 @@ def predict_house_price_body():
         f"prices from the ML pipeline. "
         f"The red line represents perfect alignment, where the predicted"
         f" and actual prices are equal. \n"
-        f"* Upon analyzing the plot, the evidence shows that the majority of "
+        f"* Upon analysing the plot, the evidence shows that the majority of "
         f"the blue dots closely align with the red line. This indicates "
         f"that the ML pipeline's predictions closely match the actual "
         f"values, demonstrating a strong correlation between the predicted"

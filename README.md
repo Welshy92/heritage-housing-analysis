@@ -75,33 +75,33 @@ Information Gathering and Data Collection:
 
 Data Visualization, Cleaning, and Preparation:
 
-- As a Data Practitioner, I want to visualize the correlated variables against the sale price to identify relationships and gain some potential insight.
+- As a Data Practitioner, I want to visualise the correlated variables against the sale price to identify relationships and gain some potential insight.
 
-        How? Create things scatter plots or heatmaps, to visualise the correlation between each variable and the sale price.
+        How? Create scatter plots or heatmaps, to visualise the correlation between each variable and the sale price.
 
 - As a Data Practitioner, I want to clean and preprocess the data to ensure its quality and suitability for analysis.
 
-        How? Apply data cleaning techniques to handle missing values, outliers or other inconsistant things in the dataset, ensuring the data is accurate and ready for analysis.
+        How? Apply data cleaning techniques to handle missing values, outliers or other inconsistent things in the dataset, ensuring the data is accurate and ready for analysis.
 
 - As a Data Practitioner, I want to identify the most correlated variables with the sale price so that I can focus my predictions on the most important variables.
 
-        How? Calculate and analyze the correlation coefficients between each variable and the sale price, identifying the variables with the highest correlation values.
+        How? Calculate and analyse the correlation coefficients between each variable and the sale price, identifying the variables with the highest correlation values.
 
 Model Training, Optimization, and Validation:
 
-- As a Data Practitioner, I want to train, optimize, and validate a regression model using the collected data to predict house sale prices accurately.
+- As a Data Practitioner, I want to train, optimise, and validate a regression model using the collected data to predict house sale prices accurately.
 
-        How? Use the cleaned and preprocessed data to train a regression model, optimize its hyperparameters, and evaluate its performance using appropriate metrics.
+        How? Use the cleaned and preprocessed data to train a regression model, optimise its hyperparameters, and evaluate its performance using appropriate metrics.
 
 Dashboard Planning, Designing, and Development:
 
-- As a user, I want to have access to an intuitive and user-friendly dashboard, so that I can easily explore the data, visualize predictions, and gain insights.
+- As a user, I want to have access to an intuitive and user-friendly dashboard, so that I can easily explore the data, visualise predictions, and gain insights.
 
-        How? The dashboard will be designed using Streamlit to ensure a clean and organized layout, intuitive navigation, and user-friendly interactions.
+        How? The dashboard will be designed using Streamlit to ensure a clean and organised layout, intuitive navigation, and user-friendly interactions.
 
-- As a user, I want the dashboard to incorporate interactive visualizations and predictive capabilities, allowing me to interact with the data and receive accurate predictions.
+- As a user, I want the dashboard to incorporate interactive visualisations and predictive capabilities, allowing me to interact with the data and receive accurate predictions.
 
-        How? A Streamlit dashboard will be used, allowing for interactive visualizations and seamless interaction with the data.
+        How? A Streamlit dashboard will be used, allowing for interactive visualisations and seamless interaction with the data.
 
 Dashboard Deployment and Release:
 
@@ -117,7 +117,7 @@ Dashboard Deployment and Release:
 
         How: Provide the client with the deployed dashboard, along with clear documentation outlining its usage instructions, features, and any necessary maintenance tasks.
 
-## Rationale to map the business requirements to the Data Visualizations and ML tasks
+## Rationale to map the business requirements to the Data Visualisations and ML tasks
 
 - ### Business Requirement 1: Correlation Study and Data Visualization
 
@@ -126,25 +126,25 @@ Dashboard Deployment and Release:
   - Review and Inspect Dataset: In order to gain an understanding of the dataset related to the houses, a thorough inspection and review of the collection data will occur.
   - Correlation Study: To understand how different variables relate to the "SalePrice" of houses, both Pearson and Spearman correlation coefficients will be calculated.
   - Select Most Correlated Variables: Based on the correlation study results, the highest correlated variables with the "SalePrice" will be identified. These variables will be the priority for further analysis.
-  - Data Visualization: various visualization methods such as scatter plots, heatmaps, and regression plots will be used to to represent the correlations between each variable and the "SalePrice."
-  - Hypothesis Validation: Findings from the correlation study and data visualizations will be used to validate hypothesis about how strong of an effect some factors can have on the sale price of houses.
+  - Data Visualization: various visualisation methods such as scatter plots, heatmaps, and regression plots will be used to to represent the correlations between each variable and the "SalePrice."
+  - Hypothesis Validation: Findings from the correlation study and data visualisations will be used to validate hypothesis about how strong of an effect some factors can have on the sale price of houses.
 
 - ### Business Requirement 2: Predict House Prices
 
   The client's objective is to accurately predict house prices in Ames, Iowa.
 
   - Data Cleaning and Feature Engineering: To prepare the data for the machine learning model, the data will be cleaned and feature engineering will be used.
-  - Regression Model Development: A regression model will be constructed using best algorithm (ExtraTreesRegression) to predict the sale price of houses.
-  - Hyperparameter Tuning: To optimize the performance of the regression model, hyperparameters will be adjusted.
+  - Regression Model Development: A regression model will be constructed using the best algorithm (ExtraTreesRegression) to predict the sale price of houses.
+  - Hyperparameter Tuning: To optimise the performance of the regression model, hyperparameters will be adjusted.
   - Regression Evaluation: The trained model will be evaluated using appropriate evaluation metrics such as R2 score and Mean Absolute Error.
-  - Predict house prices: Once the model is trained and evaluated, it will then be utilized to predict the prices of four inherited houses, as well as other house in Ames, Iowa.
+  - Predict house prices: Once the model is trained and evaluated, it will then be utilised to predict the prices of four inherited houses, as well as other houses in Ames, Iowa.
 
 ## ML Business Case
 
 - Business Requirements:
 
-  - Visualizations: Provide data visualizations showing the correlation between house attributes and sale prices.
-  - Sale Price Prediction: Aloow the prediction of sale prices for the client's inherited houses and any other houses in Ames, Iowa.
+  - Visualisations: Provide data visualisations showing the correlation between house attributes and sale prices.
+  - Sale Price Prediction: Allow the prediction of sale prices for the client's inherited houses and any other houses in Ames, Iowa.
 
 - Conventional Data Analysis:
 
@@ -175,7 +175,7 @@ Dashboard Deployment and Release:
 
 - Client Benefits:
 
-  - By understanding the most relevant variables correlated with sale price, the client can make informed decisions to maximize the sale prices of the inherited properties.
+  - By understanding the most relevant variables correlated with sale price, the client can make informed decisions to maximise the sale prices of the inherited properties.
 
 ## Dashboard Design (Streamlit Dashboard)
 
@@ -185,14 +185,14 @@ Dashboard Deployment and Release:
   - Project Terms & Jargon.
   - Describe Project Dataset.
   - State Business Requirements.
-  - 
+
 ![Summary Page Design](/media/images/SummaryPage.png)
 
 - Page 2:
 
   - Project Hypothesis & Validation.
   - Success or failure?
-  - How I came to the asnwer.
+  - How I came to the answer.
 
 ![Hypothesis Page Design](/media/images/HypothesisPage.png)
 
@@ -200,7 +200,7 @@ Dashboard Deployment and Release:
 
   - Sale Price Study.
   - Show 1st business requirement.
-  - Tickbox to show a preview of dataset.
+  - Tickbox to show a preview of the dataset.
   - Explain correlation study and its conclusions.
   - Tickbox to show regression plots.
   - Tickbox to show correlation matrix.
@@ -252,8 +252,8 @@ Dashboard Deployment and Release:
 ## Main Data Analysis and Machine Learning Libraries
 
 - numPy - Used for my correlation studies to help produce things such as heatmaps.
-- Pandas - Used to convert the raw data in dataframes, as well as performing many operations on it.
-- Plotly & matplotlib - Used to help visualse my studies into various plots for easier reading and analysis.
+- Pandas - Used to convert the raw data in data frames, as well as performing many operations on it.
+- Plotly & matplotlib - Used to help visualise my studies into various plots for easier reading and analysis.
 - SciKit Learn - Used for creating pipelines and feature selection.
 - Seaborn - Used in my data analysis correlation studies.
 - Feature-engine - Used to perform data engineering tasks
@@ -278,7 +278,7 @@ Dashboard Deployment and Release:
 ## Potential future improvements/ lessons learned
 
 - Perhaps don't drop features at a stage as early as the first notebook.
-- Maybe test an alterative method to fill in the missing data points and see if that improves ML pipeline performances. However my pipeline was within acceptable parameters.
+- Maybe test an alternative method to fill in the missing data points and see if that improves ML pipeline performances. However my pipeline was within acceptable parameters.
 
 ## Acknowledgements
 

@@ -5,7 +5,7 @@ def project_hypothesis_body():
 
     st.write("## Project Hypothesis & Validation")
 
-    # Some basic inormation on the dataset used
+    # Some basic information on the dataset used
     st.success(
         f"* We suspect the size of the house is a big factor in it's "
         f"sale price. - **Correct**. \n \n"
