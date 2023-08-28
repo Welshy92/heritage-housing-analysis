@@ -46,11 +46,11 @@ Although my friend has an excellent understanding of property prices in her own 
 
 - 1 - The client is interested in discovering how the house attributes correlate with the sale price. Therefore, the client expects data visualisations of the correlated variables against the sale price to show that.
 - 2 - The client is interested in predicting the house sale price from her four inherited houses and any other house in Ames, Iowa.
-- Although an acceptable accuracy has not been agreed upon for number 2, I have set myself a target of making sure the R2 score is above 0.75 on both train and test sets and try to ensure the model is not too under or over fitted.
+- An acceptable accuracy has been agreed upon for number 2, we have set a target of making sure the R2 score is above 0.75 on both train and test sets and try to ensure the model is not too under or over fitted.
 
 ## Hypothesis and how to validate?
 
-we will conduct a correlation study for the following hypothesis:
+We know that we can use conventional data analysis to answer business requirement 1. We will conduct a correlation study for the following hypothesis:
 
 - 1 - We suspect that larger houses will be more expensive.
 - 2 - We expect newer houses to be more expensive.
@@ -68,8 +68,8 @@ we will conduct a correlation study for the following hypothesis:
 - Page 2:
 
   - Project Hypothesis & Validation.
-  - How I intended to solve them.
   - Success or failure?
+  - How I came to the asnwer.
 
 - Page 3:
 
@@ -134,7 +134,7 @@ we will conduct a correlation study for the following hypothesis:
 
 ### External Code
 
-- Custom functions used for data cleaning, feature engineering and correlation + PPS analysis from Churnometer walkthrough project by Code Institute, as well as adapting some of the code they used to make my predictive_analysis_ui.py and regression_evaluation.py files.
+- Custom functions used for data cleaning, feature engineering and correlation + PPS analysis from Churnometer walkthrough project by Code Institute, as well as adapting some of the code they used to make my predictive_analysis_ui.py file.
 
 ## Acknowledgements
 
