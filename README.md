@@ -9,20 +9,24 @@ Image generated using [Am I Responsive web app](https://ui.dev/amiresponsive)
 
 ## **Contents**
 
-- [Overview](#overview)
-- [Dataset Content](#dataset-content)
-- [Business Requirements](#business-requirements)
-- [Hypothesis and how to validate](#hypothesis-and-how-to-validate)
-- [User Stories](#user-stories)
-- [Rationale to map the business requirements to the Data Visualisations and ML tasks](#rationale-to-map-the-business-requirements-to-the-data-visualisations-and-ml-tasks)
-- [ML Business Case](#ml-business-case)
-- [Dashboard Design (Streamlit Dashboard)](#dashboard-design-streamlit-dashboard)
-- [Deployment](#deployment)
-- [Main Data Analysis and Machine Learning Libraries](#main-data-analysis-and-machine-learning-libraries)
-- [Other Technologies Used](#other-technologies-used)
-- [Credits](#credits)
-- [Potential future improvements/ lessons learned](#potential-future-improvements-lessons-learned)
-- [Acknowledgements](#acknowledgements)
+- [**Heritage Housing Analysis**](#heritage-housing-analysis)
+  - [**Contents**](#contents)
+  - [Overview](#overview)
+  - [Dataset Content](#dataset-content)
+  - [Business Requirements](#business-requirements)
+  - [Hypothesis and how to validate](#hypothesis-and-how-to-validate)
+  - [User Stories](#user-stories)
+  - [Rationale to map the business requirements to the Data Visualisations and ML tasks](#rationale-to-map-the-business-requirements-to-the-data-visualisations-and-ml-tasks)
+  - [ML Business Case](#ml-business-case)
+  - [Dashboard Design (Streamlit Dashboard)](#dashboard-design-streamlit-dashboard)
+  - [Deployment](#deployment)
+    - [Heroku](#heroku)
+  - [Main Data Analysis and Machine Learning Libraries](#main-data-analysis-and-machine-learning-libraries)
+  - [Other Technologies Used](#other-technologies-used)
+    - [Credits](#credits)
+    - [External Code](#external-code)
+  - [Potential future improvements/ lessons learned](#potential-future-improvements-lessons-learned)
+  - [Acknowledgements](#acknowledgements)
 
 ## Overview
 
@@ -84,41 +88,41 @@ Information Gathering and Data Collection:
 
 - As a Data Practitioner, I want to download the public dataset on house prices in Ames, Iowa, so that I can gather the necessary data for analysis.
 
-        How? This will be done by obtaining the data from Kaggle using an API key.
+    **How?** This will be done by obtaining the data from Kaggle using an API key.
 
 - As a Data Practitioner, I want to gather information on the client's four inherited houses, so that I can analyse it.
 
-        How? Collect relevant details and attributes of the client's four inherited houses, including features.
+    **How?** Collect relevant details and attributes of the client's four inherited houses, including features.
 
 Data Visualization, Cleaning, and Preparation:
 
 - As a Data Practitioner, I want to visualise the correlated variables against the sale price to identify relationships and gain some potential insight.
 
-        How? Create scatter plots or heatmaps, to visualise the correlation between each variable and the sale price.
+    **How?** Create scatter plots or heatmaps, to visualise the correlation between each variable and the sale price.
 
 - As a Data Practitioner, I want to clean and preprocess the data to ensure its quality and suitability for analysis.
 
-        How? Apply data cleaning techniques to handle missing values, outliers or other inconsistent things in the dataset, ensuring the data is accurate and ready for analysis.
+    **How?** Apply data cleaning techniques to handle missing values, outliers or other inconsistent things in the dataset, ensuring the data is accurate and ready for analysis.
 
 - As a Data Practitioner, I want to identify the most correlated variables with the sale price so that I can focus my predictions on the most important variables.
 
-        How? Calculate and analyse the correlation coefficients between each variable and the sale price, identifying the variables with the highest correlation values.
+    **How?** Calculate and analyse the correlation coefficients between each variable and the sale price, identifying the variables with the highest correlation values.
 
 Model Training, Optimization, and Validation:
 
 - As a Data Practitioner, I want to train, optimise, and validate a regression model using the collected data to predict house sale prices accurately.
 
-        How? Use the cleaned and preprocessed data to train a regression model, optimise its hyperparameters, and evaluate its performance using appropriate metrics.
+    **How?** Use the cleaned and preprocessed data to train a regression model, optimise its hyperparameters, and evaluate its performance using appropriate metrics.
 
 Dashboard Planning, Designing, and Development:
 
 - As a user, I want to have access to an intuitive and user-friendly dashboard, so that I can easily explore the data, visualise predictions, and gain insights.
 
-        How? The dashboard will be designed using Streamlit to ensure a clean and organised layout, intuitive navigation, and user-friendly interactions.
+    **How?** The dashboard will be designed using Streamlit to ensure a clean and organised layout, intuitive navigation, and user-friendly interactions.
 
 - As a user, I want the dashboard to incorporate interactive visualisations and predictive capabilities, allowing me to interact with the data and receive accurate predictions.
 
-        How? A Streamlit dashboard will be used, allowing for interactive visualisations and seamless interaction with the data.
+    **How?** A Streamlit dashboard will be used, allowing for interactive visualisations and seamless interaction with the data.
 
 Dashboard Deployment and Release:
 
