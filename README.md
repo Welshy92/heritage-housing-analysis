@@ -46,6 +46,7 @@ Although my friend has an excellent understanding of property prices in her own 
 
 - 1 - The client is interested in discovering how the house attributes correlate with the sale price. Therefore, the client expects data visualisations of the correlated variables against the sale price to show that.
 - 2 - The client is interested in predicting the house sale price from her four inherited houses and any other house in Ames, Iowa.
+- Although an acceptable accuracy has not been agreed upon for number 2, I have set myself a target of making sure the R2 score is above 0.75 on both train and test sets and try to ensure the model is not too under or over fitted.
 
 ## Hypothesis and how to validate?
 
@@ -54,14 +55,6 @@ we will conduct a correlation study for the following hypothesis:
 - 1 - We suspect that larger houses will be more expensive.
 - 2 - We expect newer houses to be more expensive.
 - 3 - We expect that a house in good condition will increase in price.
-
-## The rationale to map the business requirements to the Data Visualisations and ML tasks
-
-- List your business requirements and a rationale to map them to the Data Visualisations and ML tasks.
-
-## ML Business Case
-
-- In the previous bullet, you potentially visualised an ML task to answer a business requirement. You should frame the business case using the method we covered in the course.
 
 ## Dashboard Design (Streamlit Dashboard)
 
@@ -97,11 +90,12 @@ we will conduct a correlation study for the following hypothesis:
 
   - ML: Predict House Prices.
   - Features that the model trained and importance.
-  - Pipeline performance.displaying confusion matrix and classification report.
+  - Pipeline performance.
 
-## Unfixed Bugs
+## Potential future improvements/ lessons learned
 
-- You will need to mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a big variable to consider, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed.
+* Perhaps don't drop features at a stage as early as the first notebook like I did for 
+* Maybe test an alterative method to fill in the missing data points and see if that improves ML pipeline performances.
 
 ## Deployment
 
@@ -140,7 +134,7 @@ we will conduct a correlation study for the following hypothesis:
 
 ### External Code
 
-- Custom functions used for data cleaning, feature engineering and correlation + PPS analysis from Churnometer walkthrough project by Code Institute.
+- Custom functions used for data cleaning, feature engineering and correlation + PPS analysis from Churnometer walkthrough project by Code Institute, as well as adapting some of the code they used to make my predictive_analysis_ui.py and regression_evaluation.py files.
 
 ## Acknowledgements
 
