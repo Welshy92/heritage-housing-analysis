@@ -18,6 +18,7 @@ Image generated using [Am I Responsive web app](https://ui.dev/amiresponsive)
 - [ML Business Case](#ml-business-case)
 - [Dashboard Design (Streamlit Dashboard)](#dashboard-design-streamlit-dashboard)
 - [Deployment](#deployment)
+- [Unfixed Bugs](#unfixed-bugs)
 - [Main Data Analysis and Machine Learning Libraries](#main-data-analysis-and-machine-learning-libraries)
 - [Other Technologies Used](#other-technologies-used)
 - [Credits](#credits)
@@ -265,6 +266,10 @@ Dashboard Deployment and Release:
 3. Typed in my heritage "heritage-housing-analysis" repository name and clicked Search. Once it is found, click Connect.
 4. Select the branch you want to deploy, then click Deploy Branch.
 5. Once the deployment has succeeded, click the button "Open App" on the top of the page to see the live deployment.
+
+## Unfixed Bugs
+
+There are no remaining bugs left in the project. A few bugs cropped up over development, mainly due to inconsistant class names or general typing errors.
 
 ## Main Data Analysis and Machine Learning Libraries
 
