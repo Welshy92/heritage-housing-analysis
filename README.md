@@ -1,4 +1,4 @@
-# Heritage Housing Analysis
+# **Heritage Housing Analysis**
 
 ![Responsiveness image](/media/images/responsive.png)
 Image generated using [Am I Responsive web app](https://ui.dev/amiresponsive)
@@ -6,6 +6,27 @@ Image generated using [Am I Responsive web app](https://ui.dev/amiresponsive)
 [Github repository](https://github.com/Welshy92/heritage-housing-analysis)
 
 [Live deployed project](https://heritagehousing-a55973708c5f.herokuapp.com/)
+
+## **Contents**
+
+- [**Heritage Housing Analysis**](#heritage-housing-analysis)
+  - [**Contents**](#contents)
+  - [Overview](#overview)
+  - [Dataset Content](#dataset-content)
+  - [Business Requirements](#business-requirements)
+  - [Hypothesis and how to validate](#hypothesis-and-how-to-validate)
+  - [User Stories](#user-stories)
+  - [Rationale to map the business requirements to the Data Visualisations and ML tasks](#rationale-to-map-the-business-requirements-to-the-data-visualisations-and-ml-tasks)
+  - [ML Business Case](#ml-business-case)
+  - [Dashboard Design (Streamlit Dashboard)](#dashboard-design-streamlit-dashboard)
+  - [Deployment](#deployment)
+    - [Heroku](#heroku)
+  - [Main Data Analysis and Machine Learning Libraries](#main-data-analysis-and-machine-learning-libraries)
+  - [Other Technologies Used](#other-technologies-used)
+    - [Credits](#credits)
+    - [External Code](#external-code)
+  - [Potential future improvements/ lessons learned](#potential-future-improvements-lessons-learned)
+  - [Acknowledgements](#acknowledgements)
 
 ## Overview
 
@@ -51,7 +72,7 @@ Although my friend has an excellent understanding of property prices in her own 
 - 2 - The client is interested in predicting the house sale price from her four inherited houses and any other house in Ames, Iowa.
 - An acceptable accuracy has been agreed upon for number 2, we have set a target of making sure the R2 score is above 0.75 on both train and test sets and try to ensure the model is not too under or over fitted.
 
-## Hypothesis and how to validate?
+## Hypothesis and how to validate
 
 We know that we can use conventional data analysis to answer business requirement 1. We will conduct a correlation study for the following hypothesis:
 
