@@ -1,12 +1,15 @@
 # Heritage Housing Analysis
 
-[Github repo](https://github.com/Welshy92/heritage-housing-analysis)
+![Responsiveness image](/media/images/responsive.png)
+Image generated using [Am I Responsive web app](https://ui.dev/amiresponsive)
+
+[Github repository](https://github.com/Welshy92/heritage-housing-analysis)
 
 [Live deployed project](https://heritagehousing-a55973708c5f.herokuapp.com/)
 
 ## Overview
 
-As a good friend, I have been requested by a friend, who has received an inheritance from a deceased great-grandfather located in Ames, Iowa, to help in maximising the sales price for the inherited properties.
+I have been requested by a good friend, who has received an inheritance from a deceased great-grandfather located in Ames, Iowa, to help in maximising the sales price for their inherited properties.
 
 Although my friend has an excellent understanding of property prices in her own state and residential area, she fears that basing her estimates for property worth on her current knowledge might lead to inaccurate appraisals. What makes a house desirable and valuable where she comes from might not be the same in Ames, Iowa. She found a public dataset with house prices for Ames, Iowa, and will provide you with that.
 
@@ -182,12 +185,16 @@ Dashboard Deployment and Release:
   - Project Terms & Jargon.
   - Describe Project Dataset.
   - State Business Requirements.
+  - 
+![Summary Page Design](/media/images/SummaryPage.png)
 
 - Page 2:
 
   - Project Hypothesis & Validation.
   - Success or failure?
   - How I came to the asnwer.
+
+![Hypothesis Page Design](/media/images/HypothesisPage.png)
 
 - Page 3:
 
@@ -198,17 +205,35 @@ Dashboard Deployment and Release:
   - Tickbox to show regression plots.
   - Tickbox to show correlation matrix.
 
+![Correlation Page Design 1](/media/images/CorrelationPage1.png)
+
+![Correlation Page Design 2](/media/images/CorrelationPage2.png)
+
+![Correlation Page Design 3](/media/images/CorrelationPage3.png)
+
+![Correlation Page Design 4](/media/images/CorrelationPage4.png)
+
 - Page 4:
 
   - House Price Predictor.
   - User input of variables.
   - Displays a predicted price based on variables.
 
+![Predict Page Design 1](/media/images/PredictPage1.png)
+
+![Predict Page Design 2](/media/images/PredictPage2.png)
+
 - Page 5:
 
   - ML: Predict House Prices.
   - Features that the model trained and importance.
   - Pipeline performance.
+
+![ML Page Design 1](/media/images/MLPage1.png)
+
+![ML Page Design 2](/media/images/MLPage2.png)
+
+![ML Page Design 3](/media/images/MLPage3.png)
 
 ## Deployment
 
