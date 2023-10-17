@@ -5,7 +5,7 @@ Image generated using [Am I Responsive web app](https://ui.dev/amiresponsive)
 
 [Github repository](https://github.com/Welshy92/heritage-housing-analysis)
 
-[Live deployed project](https://heritagehousing-a55973708c5f.herokuapp.com/)
+[Live deployed project](https://heritage-housing-analysis.onrender.com)
 
 ## **Contents**
 
@@ -257,9 +257,10 @@ Dashboard Deployment and Release:
 
 ### Heroku
 
-- The App live link is: [LIVE HERE!](<https://heritagehousing-a55973708c5f.herokuapp.com/>)
-- I have Set the runtime.txt Python version to a [Heroku-20](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
-- The project was deployed to Heroku using the following steps:
+
+- The project was deployed originally to Heroku using the following steps:
+
+BEFORE going to heroku, Set the runtime.txt Python version to a [Heroku-20](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
 
 1. Login to Heroku and create an App
 2. At the Deploy tab, select GitHub as the deployment method.
